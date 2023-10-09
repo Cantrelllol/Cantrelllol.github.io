@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - Cosmic Builds</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-image: url('/images/background.jpg');
+            background-size: cover;
+            color: white;
+        }
+
+        header {
+            background-color: rgba(0, 0, 0, 0.7);
+            color: white;
+            padding: 10px 0;
+            text-align: center;
+        }
+
+        nav {
+            display: flex;
+            justify-content: center;
+            margin-bottom: 20px;
+        }
+
+        nav a {
+            color: white;
+            margin: 0 20px;
+            text-decoration: none;
+        }
+
+        .container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 80vh;
+        }
+
+        .form-container {
+            background-color: rgba(0, 0, 0, 0.7);
+            padding: 20px;
+            border-radius: 10px;
+        }
+
+        .form-input {
+            margin-bottom: 10px;
+            width: 100%;
+            padding: 10px;
+            font-size: 16px;
+            border: none;
+            border-radius: 5px;
+        }
+
+        .form-textarea {
+            margin-bottom: 10px;
+            width: 100%;
+            padding: 10px;
+            font-size: 16px;
+            border: none;
+            border-radius: 5px;
+        }
+
+        .form-button {
+            background-color: #4CAF50;
+            border: none;
+            color: white;
+            padding: 15px 30px;
+            font-size: 18px;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <div>
+            
+            <a href="\index.html">
+                <img src="/images/Smalllogo.png" alt="Logo">      
+            </a>
+        </div>
+        <nav>
+            <a href="\index.html">Home</a>
+            <a href="\services\services.html">Services</a>
+            <a href="\For Sale\forsale.html">For Sale</a>
+            <a href="\contact\contact.html">Ask Questions</a>
+        </nav>
+    </header>
+
+    <div class="container">
+        <div class="form-container">
+            <h2>Contact Us</h2>
+            <form method="post" action="process-form.php">
+                <input type="email" name="email" class="form-input" placeholder="Your Email" required><br>
+                <input type="text" name="fullname" class="form-input" placeholder="Your Full Name" required><br>
+                <textarea name="message" class="form-textarea" placeholder="Your Message" rows="6" required></textarea><br>
+                <button type="submit" class="form-button">Submit</button>
+            </form>
+        </div>
+    </div>
+
+    <?php
+   
