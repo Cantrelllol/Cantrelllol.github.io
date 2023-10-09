@@ -10,7 +10,7 @@
             font-family: Arial, sans-serif;
             margin: 0;
             padding: 0;
-            background-image: url('/my website/images/background.jpg');
+            background-image: url('images/background.jpg'); /* Using a relative path for the background image */
             background-size: cover;
             color: white;
         }
@@ -56,45 +56,42 @@
 </head>
 
 <body>
-
     <header>
         <div>
-            <a href="\my website\index.html">
-                <img src="/my website/images/Smalllogo.png" alt="Logo">      
+            <a href="index.html"> <!-- Using a relative path for the homepage link -->
+                <img src="images/SmallLogo.png" alt="Logo">
             </a>
-
         </div>
         <nav>
-            <a href="/my website/index.html">Home</a>
-            <a href="/my website/services/services.html">Services</a>
-            <a href="/my website/For Sale/forsale.html">For Sale</a>
-            <a href="/my website/contact/contact.html">Ask Questions</a>
+            <a href="index.html">Home</a>
+            <a href="services.html">Services</a>
+            <a href="forsale.html">For Sale</a>
+            <a href="contact.html">Ask Questions</a>
         </nav>
     </header>
 
     <div class="container">
         <div class="box">
-            <a href="\my website\build\build.html">
-                <img src="/my website/images/pcbuild.png" alt="PC Building service">
+            <a href="build.html"> <!-- Using a relative path for the PC Building Service link -->
+                <img src="images/pcbuild.png" alt="PC Building service">
             </a>
             <p>PC Building Service</p>
         </div>
 
         <div class="box">
-            <a href="\my website\repair\repair.html">
-                <img src="/my website/images/repair.png" alt="Service 2">
+            <a href="repair.html"> <!-- Using a relative path for the Computer Repair link -->
+                <img src="images/repair.png" alt="Computer Repair">
             </a>
             <p>Computer Repair</p>
         </div>
 
         <div class="box">
-            <a href="\my website\For Sale\forsale.html">
-                <img src="/my website/images/sell.png" alt="Service 3">
+            <a href="forsale.html"> <!-- Using a relative path for the Items for Sale link -->
+                <img src="images/sell.png" alt="Items for Sale">
             </a>
-            <p>Items for sale</p>
+            <p>Items for Sale</p>
         </div>
     </div>
-
 </body>
 
 </html>
