@@ -10,7 +10,7 @@
             font-family: Arial, sans-serif;
             margin: 0;
             padding: 0;
-            background-image: url('images/background.jpg');
+            background-image: url('/my website/images/background.jpg');
             background-size: cover;
             color: white;
         }
@@ -81,9 +81,8 @@
 
     <header>
         <div>
-            
             <a href="index.html">
-                <img src="images/SmallLogo.png" alt="Logo">      
+                <img src="images/Smalllogo.png" alt="Logo">      
             </a>
         </div>
         <nav>
@@ -97,8 +96,9 @@
     <div class="container">
         <div class="form-container">
             <h2>Contact Us</h2>
-            <form method="post" action="process-form.php">
-                <input type="email" name="email" class="form-input" placeholder="Your Email" required><br>
+            <!-- Updated form action to point to Formspree endpoint -->
+            <form action="https://formspree.io/f/meqbvjyp" method="POST">
+                <input type="email" name="_replyto" class="form-input" placeholder="Your Email" required><br>
                 <input type="text" name="fullname" class="form-input" placeholder="Your Full Name" required><br>
                 <textarea name="message" class="form-textarea" placeholder="Your Message" rows="6" required></textarea><br>
                 <button type="submit" class="form-button">Submit</button>
@@ -106,5 +106,6 @@
         </div>
     </div>
 
-    <?php
-   
+</body>
+
+</html>
