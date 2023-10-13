@@ -37,9 +37,20 @@
         .container {
             display: flex;
             justify-content: center;
-            align-items: center;
-            height: 100vh;
+            flex-wrap: wrap;
+        }
+
+        .box {
+            margin: 20px;
             text-align: center;
+            width: 250px;
+            height: 300px;
+        }
+
+        .box img {
+            width: 200px;
+            height: 200px;
+            object-fit: cover;
         }
     </style>
 </head>
@@ -48,9 +59,8 @@
 
     <header>
         <div>
-            
             <a href="index.html"> <!-- Using a relative path for the homepage link -->
-                <img src="images/SmallLogo.png" alt="Logo">   
+                <img src="images/SmallLogo.png" alt="Logo">
             </a>
         </div>
         <nav>
@@ -62,7 +72,14 @@
     </header>
 
     <div class="container">
-        <p>Nothing to see here</p>
+        <div class="box">
+            <a href="barebones.html">
+                <img src="images/barebones2.png" alt="Barebones">
+            </a>
+            <p>Barebones PC <br> $200
+            </p>
+        </div>
+
     </div>
 
 </body>
